@@ -1,6 +1,6 @@
 package uml_01;
 
-public class TreeMap<TreeMapNode> {
+public class TreeMap {
 	TreeMapNode topNode = null;
 	
 	public void add(Comparable key, Object value) {
@@ -18,6 +18,7 @@ public class TreeMap<TreeMapNode> {
 class TreeMapNode{
 	private final static int LESS = 0;
 	private final static int GREATER = 1;
+	// Comparable: 객체를 비교하기위한 인터페이스 (compareTo() 메서드를 통해 객체 비교를 위한 기준 정의)
 	private Comparable itsKey;
 	private Object itsValue;
 	private TreeMapNode nodes[] = new TreeMapNode[2];

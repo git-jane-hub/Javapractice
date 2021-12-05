@@ -65,11 +65,15 @@ class Buyer2{
 		 // 구매 물품 목록
 		 String itemList = "";
 		 
+		 // 반복문을 이용해 구입한 물품의 총가격과 목록을 만듦 
 		 for(int i = 0; i < cart.length; i++) {
+			 
+			 // cart 내부의 값이 비어있으면 객체가 없기 때문에 건너뜀 
 			 if(cart[i] == null) {
 				 break;
 			 }
-			 sum += cart[i].price;
+			 sum += cart[i].price;			// cart[i] 객체 내부의 price 값을 sum에 저장
+			 itemList += cart[i] + ", ";	// cart[i]와 문자열이 결합하면서 cart[i]의 toString() 호출 
 		 }
 		 System.out.println("구매한 물품의 총 금액은 " + sum + "만원입니다.");
 		 System.out.println("구매한 제품은 " + itemList + "입니다.");
@@ -78,8 +82,10 @@ class Buyer2{
 
 public class Ex07_29 {
 	public static void main(String[] args) {
+		// Buyer2 클래스를 생성하면 Product2 배열인 cart가 생성됨 - 길이 10짜리 배열의 각 초기값은 null
 		Buyer2 b = new Buyer2();
 		
+		// buy()를 호출하면 cart[0]에는 Tv4 객체가 저장, cart[1]에는 Computer2 객체가 저장...
 		b.buy(new Tv4());
 		b.buy(new Computer2());
 		b.buy(new Audio2());

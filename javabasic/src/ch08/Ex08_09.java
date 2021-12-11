@@ -17,7 +17,7 @@ public class Ex08_09 {
 			System.out.println("에러 메시지: " + e.getMessage());	// 에러 메시지: 고의로 발생시킨 예외
 			e.printStackTrace();								// java.lang.Exception: 고의로 발생시킨 예외 at ch08.Ex08_09.main(Ex08_09.java:13)
 		}
-		System.out.println("프로그램 정상 종료됨");					// catch 블럭에 의해서 예외가 처리되었기 때문에 해당 문장까지 출력됨 
+		System.out.println("프로그램 정상 종료됨");					// catch 블럭에 의해서 예외가 처리되었기 때문에 해당 문장까지 출력됨  
 	}
 }
 

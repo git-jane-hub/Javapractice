@@ -39,5 +39,35 @@ public class Ex09_19 {
 		// StringBuffer deleteCharAt(int index): 지정된 위치의 문자를 제거
 		StringBuffer sb6 = sb4.deleteCharAt(0);
 		System.out.println(sb6);
+		
+		// StringBuffer insert(int pos, - -): 두번째 매개변수로 받은 값을 문자열로 변환하여 지정된 위치 pos(0부터 시작)에 추가 
+		StringBuffer sb7 = new StringBuffer("0123456");
+		System.out.println(sb7.insert(4, ','));
+		
+		// int length(): 인스턴스에 저장된 문자열의 길이를 반환
+		System.out.println(sb7.length());
+		
+		// StringBuffer replace(int start, int end, String str): 지정된 범위의 문자들을 주어진 문자열로 변경 
+		System.out.println(sb7.replace(3, 6, "ABC"));
+		
+		// StringBuffer reverse(): 인스턴스에 저장된 문자열의 순서를 거꾸로 나열
+		System.out.println(sb7.reverse());
+		
+		// void setChatAt(int index, char ch): 지정된 위치의 문자를 주어진 문자로 변경
+		sb7.setCharAt(2, 'Z');
+		System.out.println(sb7);
+		
+		// void setLength(int newLength): 지정된 길이로 문자열의 길이를 변경, 길이를 늘리는 경우 나머지 빈 공간을 널문자로 채움 
+		sb7.setLength(10);
+		System.out.println(sb7);
+		System.out.println(sb7.length());
+		
+		// String toString(): 인스턴스의 문자열을 String으로 반환
+		String str = sb7.toString();
+		System.out.println(str);
+		
+		// String substring(int start, int end): 지정된 범위 내의 문자열을 String으로 뽑아서 반환
+		String str2 = sb7.substring(3, 5);
+		System.out.println(str2);
 	}
 }

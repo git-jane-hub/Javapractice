@@ -5,7 +5,7 @@ public class Ex09_17 {
 	public static void main(String[] args) {
 		StringBuffer sb = new StringBuffer("abc");
 		
-		// append()는 지정된 내용을 StringBuffer에 추가하고 StringBuffer의 참조를 반환하기 때문에 아래와 같이 작성가능(반횐타입이 StringBuffer)
+		// append()는 지정된 내용을 StringBuffer에 추가하고 StringBuffer의 참조를 반환하기 때문에 메서드 체이닝 가능(반횐타입이 StringBuffer)
 		sb.append("123").append("xyz");
 		System.out.println(sb);
 		

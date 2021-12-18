@@ -6,14 +6,14 @@ public class Ex09_29 {
 		int i = 10;
 		
 		// 기본형을 참조형으로 형변환(형변환 생략가능)
-//		Integer intg = Integer.valueOf(i);
 		Integer intg = (Integer)i;
+//		Integer intg = Integer.valueOf(i);
 		
-//		Object obj = (Object)Integer.valueOf(i);
 		Object obj = (Object)i;
+//		Object obj = (Object)Integer.valueOf(i);
 
-//		Long lng = new Long(100L);
 		Long lng = 100L;
+//		Long lng = new Long(100L);
 		
 		int i2 = intg + 10;		// 참조형과 기본형간 연산 가능 
 		long l = intg + lng;	// 참조형간 덧셈 가능 

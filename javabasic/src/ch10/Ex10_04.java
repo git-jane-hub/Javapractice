@@ -14,6 +14,13 @@ public class Ex10_04 {
 		
 		// 시간 지정 
 		Calendar time1 = Calendar.getInstance();
+		
+		// Calendar 객체의 특정 필드를 초기화 
+		time1.clear(Calendar.SECOND);
+		time1.clear(Calendar.MINUTE);
+		time1.clear(Calendar.HOUR);
+		time1.clear(Calendar.HOUR_OF_DAY);
+		
 		time1.set(Calendar.HOUR_OF_DAY, 14);
 		time1.set(Calendar.MINUTE, 32);
 		time1.set(Calendar.SECOND, 30);
@@ -24,6 +31,10 @@ public class Ex10_04 {
 		// Calendar 객체 생성
 		Calendar date1 = Calendar.getInstance();	// 오늘과 차이를 얻으려는 날짜 
 		Calendar date2 = Calendar.getInstance();	// 오늘 
+		
+		// 모든 필드를 초기화 - 1970년 1월 1일 00:00:00
+		date1.clear();
+		date2.clear();
 		
 		// 월은 0부터 시작하기 때문에 12월인 경우, 11로 지정해야함
 		// date1.set(2021, Calendar.DECEMBER, 20)으로 할 수 있음
